@@ -1,0 +1,36 @@
+.new-arrival {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.animal-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  &__item {
+  }
+  &__icon {
+    // padding: 70px 60px;
+    width: 206px;
+    height: 209px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #dddddd;
+  }
+  &__title {
+    color: #1a1919;
+    padding-top: 10px;
+   //  font-size: 22px;
+   @include adaptiv(22, 18);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

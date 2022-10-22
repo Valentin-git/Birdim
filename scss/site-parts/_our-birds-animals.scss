@@ -1,0 +1,73 @@
+.our-birds-animals {
+
+   // .our-birds-animals__header
+
+   &__header {
+      padding-top: 92px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   // .our-birds-animals__body
+
+   &__body {
+      background-color: #eee;
+      padding: 130px 0;
+   }
+
+   // .our-birds-animals__inner
+
+   &__inner {
+      display: flex;
+      gap: 25px;
+   }
+
+   // .our-birds-animals__col
+
+   &__col {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      img {
+         // width: 100%;
+      }
+   }
+
+   // __col-left
+
+   &__col-left {
+      display: flex;
+      gap: 25px;
+   }
+   // .our-birds-animals__item
+
+   &__item {
+      &_left {
+         gap: 25px;
+         display: flex;
+         flex-direction: column;
+      }
+   }
+
+   // .our-birds-animals__btn
+
+   &__btn {
+      justify-content: center;
+      padding-top: 106px;
+   }
+
+   // .our-birds-animals__link
+
+   &__link {
+   }
+}
+.title {
+}
+.text {
+}
+.btn {
+}
+.link {
+}

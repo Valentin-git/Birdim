@@ -1,0 +1,78 @@
+.call-back {
+   &__header {
+      background-image: url(../img/call-back/cal-bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 85px 0;
+   }
+   &__inner {
+      display: flex;
+      justify-content: center;
+   }
+   &__title {
+   }
+   &__body {
+      // background-image: url(../img/call-back/maps.jpg);
+      // background-repeat: no-repeat;
+      // background-position: center;
+      height: 675px;
+      position: relative;
+      iframe {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.call-back-form {
+   position: absolute;
+   bottom: 15px;
+   left: 50%;
+   transform: translateX(-50%);
+
+   width: 34.7%;
+   padding: 20px 40px;
+   background-color: $whiteColor;
+   display: flex;
+   gap: 110px;
+   align-items: center;
+   border-radius: 24px;
+   box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.14);
+   &__item {
+   }
+}
+.call-back-form-group {
+   &__input {
+      width: 100%;
+      margin-bottom: 24px;
+      border: 0;
+      border-bottom: 1px solid $accentColor;
+      &::placeholder {
+         color: #666;
+         font-size: 16px;
+      }
+   }
+   &__btn {
+   }
+   &__link {
+      padding: 7px 34px;
+   }
+}
+.call-back-address {
+   &__item {
+      display: flex;
+      font-size: 17px;  
+      gap: 15px;
+   }
+   &__link {
+      display: flex;
+      font-size: 17px;  
+      gap: 15px;
+   }
+   ._icon-mailpng, ._icon-mobilepng, ._icon-mappng {
+      &::before {
+         // background: $accentColor;
+      }
+   }
+}
+
+

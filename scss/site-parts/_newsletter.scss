@@ -1,0 +1,53 @@
+.newsletter {
+   background-color: #011213;
+   padding: 100px 0;
+   // .newsletter__title
+
+   &__title {
+      color: $whiteColor;
+      font-weight: 700;
+      font-size: 26px;
+   }
+
+   // .newsletter__form
+
+   &__form {
+      position: relative;
+   }
+
+   // .newsletter__input
+
+   &__input {
+      background-color: #011213;
+      width: 100%;
+      padding: 20px 5px;
+      border: 0;
+      border-bottom: 1px solid #8f9797;
+      &::placeholder {
+         color: #4b4b4b;
+         font-size: 16px;
+      }
+   }
+
+   // .newsletter__btn
+
+   &__btn {
+      position: absolute;
+      right: 0;
+      bottom: 9px;
+   }
+
+   // .newsletter__link
+
+   &__link {
+      padding: 9px 76px !important;
+      font-size: 16px;
+      text-transform: uppercase;
+   }
+}
+.container {
+}
+.btn {
+}
+.link {
+}

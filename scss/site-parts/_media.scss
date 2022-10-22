@@ -1,0 +1,138 @@
+//------------------------------- MAX-WIDTH 1700 ---------------------//
+@media (max-width: 1700px) {
+  
+}
+//------------------------------- MAX-WIDTH 1600 ---------------------//
+@media (max-width: 1600px) {
+  
+}
+//------------------------------- MAX-WIDTH 1570 ---------------------//
+@media (max-width: 1570px) {
+  
+}
+//------------------------------- MAX-WIDTH 1500 ---------------------//
+@media (max-width: 1500px) { 
+  
+}
+//------------------------------- MAX-WIDTH 1399.99 desktops ---------//
+@media (max-width: 1399.99px) {
+  
+}
+//------------------------------- MAX-WIDTH 1199.98 -----------------//
+@media (max-width: 1199.98px) {
+  
+}
+//------------------------------- MAX-WIDTH 990.98 tablets ----------//
+@media (max-width: $tablet) {
+   .menu-nav {
+      display: none;
+   }
+   .about-our-birds {
+      &__inner {
+         flex-direction: column;
+         gap: 50px;
+      }
+   }
+} 
+//------------------------------- MAX-WIDTH 885 ---------------------//
+@media (max-width: 885px) {
+  
+}
+//------------------------------- MAX-WIDTH 841 ---------------------//
+@media (max-width: 842px) {
+  
+}
+//------------------------------- MAX-WIDTH 767.98 landscape phones ---------------------//
+@media (max-width: $mobile) {
+   .intro-video {
+      &__title {
+         width: 100%;
+      }     
+   }
+   .our-birds-animals {
+      &__inner {
+         gap: 15px;
+      }
+      &__col {
+         gap: 15px;
+      }
+      &__col-left {
+         gap: 15px;
+      }
+      &__item {
+         &_left {
+            gap: 15px;
+         }
+      }
+   }
+}
+@media (max-width: 646px) {
+ 
+}
+//------------------------------- MAX-WIDTH 575.98 portrait phones ---------------------//
+@media (max-width: 575.98px) {
+   .intro {
+      min-height: 1020px;
+   }
+   .intro-video {
+      padding-top: 220px;
+      flex-direction: column;
+      gap: 70px;
+      &__item {
+         width: 100%;
+      }     
+   }
+   .intro-video-shape {
+      display: flex;
+      justify-content: center;
+   }
+   .intro-btn {
+      &__link {
+         padding: 15px 50px;
+      }
+   }
+   .intro-video-shape {
+      &__link {
+         width: 80px;
+         height: 80px;
+         &::before {
+            width: 80px;
+            height: 80px;
+         }
+      } 
+   }
+   ._icon-triangle-arrowpng {
+      width: 80px;
+      height: 80px;
+   }
+   .newsletter {
+      &__btn {
+         bottom: -70px;
+         left: 0;
+      }
+   }
+   .our-birds-animals {
+      &__inner {
+         flex-direction: column;
+      }
+      &__item {
+         img {
+            width: 100%;
+         }
+      }
+   } 
+}
+//------------------------------- MAX-WIDTH 500 ---------------------//
+@media (max-width: 500px) {
+   .intro-btn__link {
+      padding: 15px 22px;
+   }
+   .intro-video__text {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+//------------------------------- MAX-WIDTH 418 ---------------------//
+@media (max-width: 418px) {
+  
+}

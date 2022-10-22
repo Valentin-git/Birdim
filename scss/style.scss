@@ -1,0 +1,126 @@
+@use 'sass:math';
+@import 'common/fonts';
+@import 'common/icons';
+@import 'common/reset';
+@import 'common/variable';
+@import 'common/mixins';
+
+body {
+  font-size: rem(17);
+  color: $textColor;
+  font-family: $fontFamily;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+fieldset {
+  border: 0;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; // прижать футер
+}
+.page {
+  flex: 1 1 auto;
+}
+[class*="container"] {
+  max-width: $maxWidthContainer; 
+  margin: 0 auto;
+  padding: 0 $containerPadding;
+}
+@media (max-width: 1199.98px) {
+  [class*="container"] {
+    max-width: 970px;
+  }
+}
+@media (max-width: $tablet) {
+  [class*="container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: $mobile) {
+  [class*="container"] {
+    max-width: none;
+  }
+}
+// .container-fluid {
+//   max-width: 1841px;
+// }
+.title {
+  position: relative;
+//   font-size: 50px;
+  @include adaptiv(50, 30);
+  font-weight: 700;
+}
+.text {
+  padding-top: 40px;
+  padding-bottom: 65px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.btn {
+  display: flex;
+  .link {
+    background: $accentColor;
+    color: $whiteColor;
+    padding: 12px 22px;
+
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+.common {
+   &__title {
+      color: #02191b;
+      span {
+        color: $cyanColor;
+      }
+      &::before {
+        content: "";
+        background-image: url(../img/new-arrival/dove-min.png);
+        background-repeat: no-repeat;
+        width: 52px;
+        height: 50px;
+  
+        position: absolute;
+        top: 50%;
+        left: -32px;
+        transform: translate(-50%, -50%);
+      }
+      &::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: $accentColor;
+        border-radius: 50%;
+  
+        position: absolute;
+        top: 50%;
+        right: -28px;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &__text {
+      color: #000706;
+      text-align: center;
+      line-height: 1.6;
+    }
+}
+
+
+
+
+@import 'site-parts/header';
+@import 'site-parts/intro';
+@import 'site-parts/new-arrival';
+@import 'site-parts/about-our-birds';
+@import 'site-parts/our-birds-animals';
+@import 'site-parts/testimonials-carousel';
+@import 'site-parts/newsletter';
+@import 'site-parts/call-back';
+
+@import 'site-parts/footer';
+@import 'site-parts/media';
