@@ -23,52 +23,32 @@
   display: block;
 }
 
-._icon-arrow-png:before {
+._icon-facebook:before {
   content: "\e900";
 }
 
-._icon-facebookpng:before {
+._icon-instagram:before {
   content: "\e901";
 }
 
-._icon-heartpng:before {
+._icon-linkedin:before {
   content: "\e902";
 }
 
-._icon-instagrampng:before {
+._icon-mail:before {
   content: "\e903";
 }
 
-._icon-linkedinpng:before {
+._icon-map:before {
   content: "\e904";
 }
 
-._icon-mailpng:before {
+._icon-mobile:before {
   content: "\e905";
 }
 
-._icon-mappng:before {
+._icon-twitter:before {
   content: "\e906";
-}
-
-._icon-mobilepng:before {
-  content: "\e907";
-}
-
-._icon-quote:before {
-  content: "\e908";
-}
-
-._icon-searchpng:before {
-  content: "\e909";
-}
-
-._icon-triangle-arrowpng:before {
-  content: "\e90a";
-}
-
-._icon-twitterpng:before {
-  content: "\e90b";
 }
 
 *, *::before, *::after {
@@ -313,9 +293,10 @@ fieldset {
 }
 
 .intro {
-  background-image: url(../img/header/bg.png);
+  background: url(../img/header/bg1.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 1200px;
   position: relative;
 }
@@ -749,7 +730,7 @@ fieldset {
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 34.7%;
+  max-width: 760px;
   padding: 20px 40px;
   background-color: white;
   display: flex;
@@ -760,7 +741,7 @@ fieldset {
 }
 
 .call-back-form-group__input {
-  width: 100%;
+  width: 330px;
   margin-bottom: 24px;
   border: 0;
   border-bottom: 1px solid #f7672c;
@@ -772,19 +753,31 @@ fieldset {
 }
 
 .call-back-form-group__link {
-  padding: 7px 34px;
+  padding: 7px 34px !important;
 }
 
 .call-back-address__item {
   display: flex;
+  align-items: center;
   font-size: 17px;
   gap: 15px;
+  margin-bottom: 21px;
+}
+
+.call-back-address__item:last-child {
+  margin-bottom: 0;
 }
 
 .call-back-address__link {
   display: flex;
+  align-items: center;
   font-size: 17px;
   gap: 15px;
+}
+
+.call-back-address ._icon-mail::before, .call-back-address ._icon-mobile::before, .call-back-address ._icon-map::before {
+  color: #f7672c;
+  font-size: 30px;
 }
 
 .footer {
@@ -832,6 +825,14 @@ fieldset {
   .our-birds-animals__item_left {
     gap: 15px;
   }
+  .call-back-form {
+    gap: 40px;
+    padding: 20px 30px;
+    width: 100%;
+  }
+  .call-back-form-group__input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -869,11 +870,12 @@ fieldset {
     bottom: -70px;
     left: 0;
   }
-  .our-birds-animals__inner {
-    flex-direction: column;
-  }
   .our-birds-animals__item img {
     width: 100%;
+  }
+  .call-back-form {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 

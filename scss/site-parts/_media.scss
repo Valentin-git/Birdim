@@ -65,6 +65,16 @@
          }
       }
    }
+   .call-back-form {
+      gap: 40px;
+      padding: 20px 30px;
+      width: 100%;
+   }
+   .call-back-form-group {
+      &__input {
+         width: 100%;
+      }
+   }
 }
 @media (max-width: 646px) {
  
@@ -113,7 +123,7 @@
    }
    .our-birds-animals {
       &__inner {
-         flex-direction: column;
+         // flex-direction: column;
       }
       &__item {
          img {
@@ -121,6 +131,10 @@
          }
       }
    } 
+   .call-back-form {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+   }
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {

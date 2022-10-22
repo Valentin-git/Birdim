@@ -1,7 +1,11 @@
 .intro {
-  background-image: url(../img/header/bg.png);
+  background: url(../img/header/bg1.png);
+      // linear-gradient(90deg, rgba(3,47,75,1) 80%, rgba(3,47,75,1) 80%),
+      // url(../img/header/bg1.png);
+//   background: linear-gradient(90deg, rgba(3,47,75,1) 100%, rgba(3,47,75,1) 100%);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 1200px;
   position: relative;
 }

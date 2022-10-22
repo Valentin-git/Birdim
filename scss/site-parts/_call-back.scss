@@ -29,7 +29,7 @@
    left: 50%;
    transform: translateX(-50%);
 
-   width: 34.7%;
+   max-width: 760px;
    padding: 20px 40px;
    background-color: $whiteColor;
    display: flex;
@@ -42,7 +42,7 @@
 }
 .call-back-form-group {
    &__input {
-      width: 100%;
+      width: 330px;
       margin-bottom: 24px;
       border: 0;
       border-bottom: 1px solid $accentColor;
@@ -54,23 +54,30 @@
    &__btn {
    }
    &__link {
-      padding: 7px 34px;
+      padding: 7px 34px !important;
    }
 }
 .call-back-address {
    &__item {
       display: flex;
+      align-items: center;
       font-size: 17px;  
       gap: 15px;
+      margin-bottom: 21px;
+      &:last-child {
+         margin-bottom: 0;
+      }
    }
    &__link {
       display: flex;
+      align-items: center;
       font-size: 17px;  
       gap: 15px;
    }
-   ._icon-mailpng, ._icon-mobilepng, ._icon-mappng {
+   ._icon-mail, ._icon-mobile, ._icon-map {
       &::before {
-         // background: $accentColor;
+         color: $accentColor;
+         font-size: 30px;
       }
    }
 }
