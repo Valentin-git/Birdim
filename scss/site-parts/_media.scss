@@ -20,7 +20,11 @@
 }
 //------------------------------- MAX-WIDTH 1199.98 -----------------//
 @media (max-width: 1199.98px) {
-  
+   .testimonials-carousel {
+      &__content {
+         flex: 0 0 90%;
+      }
+   }
 }
 //------------------------------- MAX-WIDTH 990.98 tablets ----------//
 @media (max-width: $tablet) {
@@ -31,6 +35,20 @@
       &__inner {
          flex-direction: column;
          gap: 50px;
+      }
+   }
+   .testimonials {
+      padding: 105px 0;
+   }
+   .testimonials-carousel {
+      &__item {
+         gap: 30px;
+      }
+      &__content {
+         flex: 0 0 95%;
+         padding-top: 30px;
+         padding-bottom: 30px;
+     
       }
    }
 } 
@@ -73,6 +91,15 @@
    .call-back-form-group {
       &__input {
          width: 100%;
+      }
+   }
+   .testimonials-carousel {
+      &__picture-inner {
+         display: none;
+      }
+      &__content {
+         flex: 0 0 100%;
+         padding: 30px;
       }
    }
 }

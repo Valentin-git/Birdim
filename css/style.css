@@ -598,24 +598,22 @@ fieldset {
 }
 
 .testimonials-carousel__picture {
-  position: absolute;
-  top: 0;
-  left: 86px;
-}
-
-.testimonials-carousel__picture::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: -11px;
-  width: 188px;
-  height: 185px;
-  background-color: #f7672c;
+  margin-right: -130px;
+  position: relative;
 }
 
 .testimonials-carousel__picture img {
   z-index: 100;
   position: relative;
+}
+
+.testimonials-carousel__element {
+  position: absolute;
+  left: -11px;
+  bottom: -11px;
+  width: 113%;
+  height: 100%;
+  background-color: #f7672c;
 }
 
 .testimonials-carousel__content {
@@ -647,9 +645,20 @@ fieldset {
 
 .testimonials-carousel__text {
   color: white;
-  font-size: 16px;
   line-height: 2;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .testimonials-carousel__text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media (min-width: 767px) {
+  .testimonials-carousel__text {
+    font-size: calc(14px + 2 * (100vw  / 1600));
+  }
 }
 
 .testimonials-carousel__text::after {
@@ -782,7 +791,6 @@ fieldset {
 
 .footer {
   background-color: #1c1c1c;
-  padding: 30px 0;
 }
 
 .footer__inner {
@@ -793,10 +801,44 @@ fieldset {
 
 .footer-social {
   display: flex;
+  gap: 5px;
+  padding: 30px 0;
+}
+
+.footer-social__link::before {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #1c1c1c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.footer-social__link:hover::before {
+  background-color: #04cced;
+  color: white;
+}
+
+.footer-copir {
+  padding: 30px 0;
 }
 
 .footer-copir__text {
   color: white;
+}
+
+.line {
+  border-bottom: 1px solid #556061;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .testimonials-carousel__content {
+    flex: 0 0 90%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -806,6 +848,17 @@ fieldset {
   .about-our-birds__inner {
     flex-direction: column;
     gap: 50px;
+  }
+  .testimonials {
+    padding: 105px 0;
+  }
+  .testimonials-carousel__item {
+    gap: 30px;
+  }
+  .testimonials-carousel__content {
+    flex: 0 0 95%;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -832,6 +885,13 @@ fieldset {
   }
   .call-back-form-group__input {
     width: 100%;
+  }
+  .testimonials-carousel__picture-inner {
+    display: none;
+  }
+  .testimonials-carousel__content {
+    flex: 0 0 100%;
+    padding: 30px;
   }
 }
 
